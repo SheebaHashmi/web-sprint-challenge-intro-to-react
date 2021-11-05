@@ -2,31 +2,35 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Accordian = styled.div`
+const StyledCharacter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid green;
     width: 50%;
-    margin: 0 25%;
-    
+    margin: 2% 25%;
+    border: 1px solid green;
+
     h2{
         padding: 0 2%;
+        
     }
     div{
-        padding-right: 2%;
+        padding: 2% 3%;
+        margin-right: 2%;
+        background-color:grey;
+        border-radius: 10% 43%;
     }
 
 `;
 
 function Character({ character }){
     return (
-        <Accordian>
+        <StyledCharacter>
         <h2>{character.name}</h2>
         <div>{character.birth_year}</div>
 
-        </Accordian>
+        </StyledCharacter>
     )
 }
 export default Character;

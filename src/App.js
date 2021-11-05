@@ -23,9 +23,12 @@ const App = () => {
   return (
     <div className="App">
       <h1>REACT WARS</h1>
+      <div>
       {
         characters.map(character => <Character character = {character} key={character.name}/>)
       }
+      </div>
+     
     </div>
   );
 }
